@@ -34,8 +34,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
           id={inputId}
           className={cn(
             "input-base",
-            leftIcon && "pl-10",
-            rightSlot && "pr-12",
+            !!leftIcon && "pl-10",
+            !!rightSlot && "pr-12",
             error && "border-rose-400 focus:border-rose-500 focus:ring-rose-500/10",
             className
           )}
